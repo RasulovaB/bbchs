@@ -1,2 +1,2 @@
 # bbchs
-Built website using bootstrap, css-lightbox, js
+Built a website using bootstrap, css-lightbox, js
