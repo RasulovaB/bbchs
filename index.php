@@ -9,15 +9,7 @@
 	<link rel="stylesheet" href="style.css">
 	<link rel="stylesheet" href="css/fixed.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$(".btn").click(function(){
-				$(".input, .text-area").val("");
-			});
-		});
-
-
-	</script>
+	
 </head>
 
 <body data-spy="scroll" data-target="#navbarResponsive">
@@ -41,12 +33,12 @@
 		    	</li>
 
 		    	<li class="nav-item dropdown">
-		    		<a class="nav-link" href="#gallery">Gallery  <i class="fa fa-caret-down"></i>
+		    		<a class="nav-link" href="#gallery">Gallery  <i class="fa fa-caret-down"></i></a>
 		    		<ul>
 		    			<li><a class="nav-link" href="balloon.html">Balloon Decor</a></li>
 		    			<li><a class="nav-link" href="event.html">Event Decor</a></li>
 		    		</ul>
-		    	</a>
+		    	
 		    	</li>
 
 		    	<li class="nav-item">
@@ -384,13 +376,7 @@
 		</div> <!------end row ---->
 		</div>
 
-		<!----- Instagram feed ------>
-
-		<!-- <div id="instafeed"></div> -->
-
-
-
-		<!----- Instagram feed End ------>
+		
 
 		<!-- Start Jumbotron -->
         <div class="jumbotron-2">
@@ -507,49 +493,40 @@
 					<div class="wrapper">
 						<div class="contact-us">
 							
-							<div class="title">Request a Quote</div>
-							<div class="input-fields">
-								
-										<div class="items">
-											
-											<input id="name" type="text" placeholder="Name" class="input">
-										</div>
-										<div class="items">
-											
-											<input id="email" type="text" placeholder="Email" class="input">
-										</div>
-										<div class="items">
-											
-											<input id="phone" type="text" placeholder="Phone" class="input">
-										</div>
-									
-									
-										<div class="items">
-											
-											<input id="company" type="text" placeholder="Company" class="input">
-										</div>
-									
-										
-										<div class="items">
-											
-											<input id="date" type="text" placeholder="Event date" class="input">
-										</div>
-										<div class="items">
-											
-											<input id="color" type="text" placeholder="Event color" class="input">
-										</div>
-										<div class="items">
-											
-											<input id="location" type="text" placeholder="Event location" class="input">
-										</div>
-										
-							
-								<div class="items">
-									
-									<textarea id="msg" placeholder="Message" class="text-area"></textarea>
-								</div>
-								<div class="btn">Send Message</div>
-							</div>
+							<form id="contact-form" name="contact-form" method="post" action="contact.php">
+
+                                    <div class="messages"></div>
+
+                                    <div class="title">Request a Quote</div>
+                                    <div class="input-fields">
+
+
+                                        <div class="items">
+
+                                            <input id="form_name" type="text" name="name" placeholder="Name" class="form-control" required>
+                                        </div>
+
+
+                                        <div class="items">
+
+                                            <input id="form_email" type="email" name="email" placeholder="Email" class="form-control mail-field" required>
+                                        </div>
+
+                                        <div class="items">
+
+                                            <input id="form_phone" type="text" name="subject" placeholder="Subject" class="form-control">
+                                        </div>
+
+                                        <div class="items">
+
+                                            <textarea id="form_message" name="message" rows="8" placeholder="Message" class="form-control" required></textarea>
+                                        </div>
+                                        <div class="btn">
+                                            <button type="submit" class="btn" value="Send message" required="required" data-error="message is required.">Reach Out</button>
+                                        </div>
+                                    </div>
+
+                                </form>
 
 
 
@@ -587,8 +564,8 @@
 <script src="js/jquery-3.3.1.min.js"></script>
 <script src="bootstrap-4.1.3-dist/js/bootstrap.min.js"></script>
 <script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
-<!-- <script src="js-insta/instafeed.min.js"></script>
-<script src="js-isnta/custom.js"></script> -->
+
+
 <!--- End of Script Source Files -->
 
 </body>
