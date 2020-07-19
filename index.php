@@ -467,7 +467,7 @@
 
       
 		</div> <!-- End Jumbotron -->
-	</div>
+	
 	<!-- End Client Station -->
 
 	<!-- Start Contact Section -->
